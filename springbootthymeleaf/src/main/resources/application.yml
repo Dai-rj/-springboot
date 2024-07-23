@@ -1,0 +1,17 @@
+# 配置Thymeleaf模板引擎的设置
+spring:
+  thymeleaf:
+    # 指定模板文件的前缀，这里表示模板文件位于classpath下的templates目录中
+    prefix: classpath:/templates/
+    # 指定模板文件的后缀，这里限定模板文件的后缀为.html
+    suffix: .html
+    servlet:
+      # 配置Servlet相关的设置
+      # 指定响应的内容类型为text/html
+      content-type: text/html
+      # 指定响应的编码为UTF-8
+      encoding: UTF-8
+      # 指定Thymeleaf的模式为HTML5
+      mode: HTML5
+    # 关闭模板缓存，以便每次请求都重新渲染模板
+    cache: false
