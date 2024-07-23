@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: mysql
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.southwind.entity
